@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/903611dc5d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Wix+Madefor+Display&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!--Inicio del proyecto/
+        HEADER Y PORTADA-->
+    <div class="contenedor-flex presentacion">
+        <header class="fondo-header">
+            <h1>Generador de Memes</h1>
+            <span class="navegacion"><i class="fa-regular fa-file-image"></i>     Imagen</span>
+            <span class="navegacion"><i class="fa-solid fa-font"></i>     Texto</span>
+            <span class="navegacion"><i class="fa-solid fa-lightbulb"></i>     Modo oscuro</span>
+        </header>
+        <main>
+            <div>
+                <h1 class="texto-superior-inferior">
+                    TOP TEXT
+                </h1>
+            </div>
+            <div class="centro-texto"></div>
+            <div>
+                <h1 class="texto-superior-inferior">
+                    BOTTOM TOP
+                </h1>
+            </div>
+        </main>
+        <button class="descarga-boton">
+            <i class="fa-solid fa-download"></i> Descargar meme</button>
+    </div>
+
+    <!--Desarrollo del proyecto/
+        Columna IMAGEN-->
+    <div class="contenedor-flex columna">
+        <aside>
+            <h2>IMAGEN</h2>
+            <div>
+                <form class="contenedor-flex">
+                    <label for="url">URL</label>
+                    <input type="text">
+                    <label for="fondo">FONDO</label>
+                    <input type="color">
+                    <select name="opacidad" id="opciones-color">
+                        <option value="ninguno">Ninguno</option>
+                        <option value="aclarar">Aclarar</option>
+                        <option value="oscurecer">Oscurecer</option>
+                        <option value="diferencia">Diferencia</option>
+                        <option value="luminosidad">Luminosidad</option>
+                        <option value="multiplicar">Multiplicar</option>
+                    </select>
+                    <h3>FILTROS</h3>
+                    <label for="brillo">BRILLO</label>
+                    <input type="range">
+                    <label for="">OPACIDAD</label>
+                    <input type="range">
+                    <label for="">CONTRASTE</label>
+                    <input type="range">
+                    <label for="">DESENFOQUE</label>
+                    <input type="range">
+                    <label for="">ESCALA DE GRISES</label>
+                    <input type="range">
+                    <label for="">SEPIA</label>
+                    <input type="range">
+                    <label for="">HUE</label>
+                    <input type="range">
+                    <label for="">SATURADO</label>
+                    <input type="range">
+                    <label for="">NEGATIVO</label>
+                    <input type="range">
+                    <button>Reestablecer filtros</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+
+    <!--Columna TEXTO
+
+    <aside>
+        <h2>TEXTO</h2>
+        <div>
+            <form>
+                <label for="superior">SUPERIOR</label>
+                <input type="text">
+                <input type="checkbox" name="sintextosuperior" id="superior">
+                <label for="sin-texto">Sin texto superior</label>
+                <label for="inferior">INFERIOR</label>
+                <input type="text">
+                <input type="checkbox" name="sintextosuperior" id="superior">
+                <label for="sin-texto">Sin texto inferior</label>
+                <label for="fuente">FUENTE</label>
+                <select name="tipos-de-letra" id="opciones-letra">
+                    <option value="impact">Impact</option>
+                    <option value="arial">Arial</option>
+                    <option value="arialb">Arial Black</option>
+                    <option value="american">American Typewriter</option>
+                    <option value="andale">Andale Mono</option>
+                    <option value="comic">Comic Sans Ms</option>
+                    <option value="helvetica">Helvetica</option>
+                    <option value="impact">Impact</option>
+                    <option value="vendana">Vendana</option>
+                    <option value="times">Times New Roman</option>
+                </select>
+                <input type="number">
+                <label for="fondo">COLOR</label>
+                <input type="color">
+                <label for="fondo">FONDO</label>
+                <input type="color">
+                <input type="checkbox" name="fondotransparente" id="fondo">
+                <label for="fondo">Fondo transparente</label>
+                <label for="contorno">CONTORNO</label>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <label for="espaciado">ESPACIADO</label>
+                <input type="number">
+                <label for="interlineado">INTERLINEADO</label>
+                <select name="interlineado" id="opciones-interlineado">
+                    <option value="1,2">1,2</option>
+                    <option value="0,8">0,8</option>
+                    <option value="1">1</option>
+                    <option value="1,5">1,5</option>
+                    <option value="2">2</option>
+                    <option value="2,5">2,5</option>
+                </select>
+    </aside>-->
     <script src="script.js"></script>
 </body>
+
 </html>

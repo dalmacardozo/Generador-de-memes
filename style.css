@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    background-color: #30343f;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+
+
+}
+
+/**PORTADA PRINCIPAL/ HEADER Y MAIN**/
+
+.contenedor-flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.presentacion {
+    flex-grow: 10;
+    align-items: center;
+
+}
+
+.navegacion {
+    padding: 10px;
+}
+
+.fondo-header {
+    width: 100%;
+    text-align: center;
+    background-color: #191e2b;
+    color: white;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+.centro-texto {
+    width: 600px;
+    height: 400px;
+    background-color: black;
+}
+
+.texto-superior-inferior {
+    background-color: white;
+    color: black;
+    height: 90px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+
+}
+
+.descarga-boton {
+    background-color: #2e7d32;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+
+/**ASAID**/
+
+.columna {
+    flex-grow: 1;
+    background-color: #252935;
+    color: white;
+}
