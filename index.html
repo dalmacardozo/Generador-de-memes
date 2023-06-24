@@ -17,14 +17,15 @@
 </head>
 
 <body>
-    <!--Inicio del proyecto/
-        HEADER Y PORTADA-->
+
+    <!--HEADER Y PORTADA-->
+
     <div class="contenedor-flex presentacion">
         <header class="fondo-header">
             <h1>Generador de Memes</h1>
-            <span class="navegacion"><i class="fa-regular fa-file-image"></i>     Imagen</span>
-            <span class="navegacion"><i class="fa-solid fa-font"></i>     Texto</span>
-            <span class="navegacion"><i class="fa-solid fa-lightbulb"></i>     Modo oscuro</span>
+            <span class="navegacion"><i class="fa-regular fa-file-image"></i> Imagen</span>
+            <span class="navegacion"><i class="fa-solid fa-font"></i> Texto</span>
+            <span class="navegacion"><i class="fa-solid fa-lightbulb"></i> Modo oscuro</span>
         </header>
         <main>
             <div>
@@ -43,52 +44,64 @@
             <i class="fa-solid fa-download"></i> Descargar meme</button>
     </div>
 
-    <!--Desarrollo del proyecto/
-        Columna IMAGEN-->
+    <!--COLUMNA IMAGEN-->
+
     <div class="contenedor-flex columna">
         <aside>
-            <h2>IMAGEN</h2>
+            <p class="titulo-columna">IMAGEN</p>
             <div>
                 <form class="contenedor-flex">
-                    <label for="url">URL</label>
-                    <input type="text">
-                    <label for="fondo">FONDO</label>
-                    <input type="color">
-                    <select name="opacidad" id="opciones-color">
-                        <option value="ninguno">Ninguno</option>
-                        <option value="aclarar">Aclarar</option>
-                        <option value="oscurecer">Oscurecer</option>
-                        <option value="diferencia">Diferencia</option>
-                        <option value="luminosidad">Luminosidad</option>
-                        <option value="multiplicar">Multiplicar</option>
-                    </select>
-                    <h3>FILTROS</h3>
-                    <label for="brillo">BRILLO</label>
-                    <input type="range">
-                    <label for="">OPACIDAD</label>
-                    <input type="range">
-                    <label for="">CONTRASTE</label>
-                    <input type="range">
-                    <label for="">DESENFOQUE</label>
-                    <input type="range">
-                    <label for="">ESCALA DE GRISES</label>
-                    <input type="range">
-                    <label for="">SEPIA</label>
-                    <input type="range">
-                    <label for="">HUE</label>
-                    <input type="range">
-                    <label for="">SATURADO</label>
-                    <input type="range">
-                    <label for="">NEGATIVO</label>
-                    <input type="range">
-                    <button>Reestablecer filtros</button>
+                    <label for="url">
+                        <p class="subtitulos-columna">URL
+                        </p>
+                    </label>
+                    <input type="text" class="contenedor-input">
+                    <div class="fondo">
+                    <div>
+                        <label for="fondo">
+                            <p class="subtitulos-columna">FONDO</p>
+                        </label>
+                        <div class="icono-color">
+                        <input type="color" value="#FFFFFF">"#FFFFFF"</div>
+                    </div>
+                    <div class="contenedor-opciones-color">
+                        <select name="opacidad" id="opciones-color">
+                            <option value="ninguno">Ninguno</option>
+                            <option value="aclarar">Aclarar</option>
+                            <option value="oscurecer">Oscurecer</option>
+                            <option value="diferencia">Diferencia</option>
+                            <option value="luminosidad">Luminosidad</option>
+                            <option value="multiplicar">Multiplicar</option>
+                        </select>
+                </div>
+            </div>
+                    <p class="subtitulos-columna titulo-filtro">FILTROS</p>
+                    <label for="brillo" class="sub-filtros">BRILLO</label>
+                    <input type="range" class="range">
+                    <label for="opacidad" class="sub-filtros">OPACIDAD</label>
+                    <input type="range" class="range">
+                    <label for="contraste" class="sub-filtros">CONTRASTE</label>
+                    <input type="range" class="range">
+                    <label for="desenfoque" class="sub-filtros">DESENFOQUE</label>
+                    <input type="range" class="range">
+                    <label for="escala-de-grises" class="sub-filtros">ESCALA DE GRISES</label>
+                    <input type="range" class="range">
+                    <label for="sepia" class="sub-filtros">SEPIA</label>
+                    <input type="range" class="range">
+                    <label for="hue" class="sub-filtros">HUE</label>
+                    <input type="range" class="range">
+                    <label for="saturado" class="sub-filtros">SATURADO</label>
+                    <input type="range" class="range">
+                    <label for="negativo" class="sub-filtros">NEGATIVO</label>
+                    <input type="range" class="range">
+                    <button class="contenedor-input contenedor-restauracion">Reestablecer filtros</button>
                 </form>
             </div>
         </aside>
     </div>
 
 
-    <!--Columna TEXTO
+    <!--COLUMNA TEXTO
 
     <aside>
         <h2>TEXTO</h2>

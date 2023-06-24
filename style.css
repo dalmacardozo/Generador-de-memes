@@ -1,3 +1,4 @@
+/**MODO OSCURO**/
 body {
     margin: 0;
     min-height: 100vh;
@@ -18,7 +19,7 @@ body {
 }
 
 .presentacion {
-    flex-grow: 10;
+    flex-grow: 90;
     align-items: center;
 
 }
@@ -63,11 +64,63 @@ body {
     font-family: 'Wix Madefor Display', sans-serif;
 }
 
-
-/**ASAID**/
+/**COLUMNA IMAGEN/MODO OSCURO**/
 
 .columna {
+    padding: 15px;
     flex-grow: 1;
     background-color: #252935;
     color: white;
+    width: 220px;
 }
+
+.fondo {
+    display: flex;
+    ;
+}
+
+.contenedor-opciones-color {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.titulo-columna {
+    text-align: center;
+}
+
+.titulo-filtro {
+    margin-top: 40px;
+}
+
+.sub-filtros {
+    font-size: 12px;
+    padding: 7px 10px
+}
+
+.contenedor-input, .icono-color, .contenedor-opciones-color {
+    background-color: #393e49;
+    border-radius: 5px;
+    padding: 10px;
+    border-style: hidden;
+    
+}
+
+.contenedor-restauracion {
+    color: white;
+    margin-right: 60px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.subtitulos-columna {
+    font-size: 12px;
+    
+}
+
+.range{
+    accent-color: #5a5d68;
+}
+
+input[type="color"] {
+}
+
