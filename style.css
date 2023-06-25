@@ -121,6 +121,34 @@ body {
     accent-color: #5a5d68;
 }
 
-input[type="color"] {
+
+
+/**COLUMNA-TEXTO**/
+
+.fuente, .contenedor-check {
+    display: flex;
+    margin-top: 5px;
 }
+.posicion-fuente {
+    width: 15px;
+    padding: 10px;
+    margin: 2px;
+}
+
+.tamaño-fuente {
+    width: 90px;
+    padding: 10px;
+    margin: 2px;
+}
+
+.contorno {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor-contorno {
+    width: 50px;
+}
+
+
 

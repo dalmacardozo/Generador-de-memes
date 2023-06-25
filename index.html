@@ -44,7 +44,7 @@
             <i class="fa-solid fa-download"></i> Descargar meme</button>
     </div>
 
-    <!--COLUMNA IMAGEN-->
+    <!--COLUMNA IMAGEN
 
     <div class="contenedor-flex columna">
         <aside>
@@ -62,7 +62,7 @@
                             <p class="subtitulos-columna">FONDO</p>
                         </label>
                         <div class="icono-color">
-                        <input type="color" value="#FFFFFF">"#FFFFFF"</div>
+                        <input type="color" value="#FFFFFF">#FFFFFF</div>
                     </div>
                     <div class="contenedor-opciones-color">
                         <select name="opacidad" id="opciones-color">
@@ -98,59 +98,120 @@
                 </form>
             </div>
         </aside>
+    </div>-->
+
+
+    <!--COLUMNA TEXTO-->
+
+    <div class="contenedor-flex columna">
+        <aside>
+            <p class="titulo-columna">TEXTO</p>
+            <div>
+                <form class="contenedor-flex">
+                    <p class="subtitulos-columna">SUPERIOR
+                    </p>
+                    <label for="superior"></label>
+                    <input type="text" class="contenedor-input" placeholder="TOP TEXT">
+                    <div class="contenedor-check">
+                        <label for="sin-texto-superior"></label>
+                        <div><input type="checkbox" name="top-tex" id="superior"></div>
+                        <div>Sin texto superior</div>
+                    </div>
+                    <p class="subtitulos-columna">INFERIOR
+                    </p>
+                    <label for="inferior"></label>
+                    <input type="text" class="contenedor-input" placeholder="BOTTOM TEXT">
+                    <div class="contenedor-check">
+                        <label for="sin-texto-inferior"></label>
+                        <div><input type="checkbox" name="bottom-tex" id="inferior"></div>
+                        <div>Sin texto inferior</div>
+                    </div>
+                    <p class="subtitulos-columna">FUENTE
+                    </p>
+                    <label for="fuente"></label>
+                    <select name="tipo-de-fuente" id="fuente" class="contenedor-input">
+                        <option value="impact">Impact</option>
+                        <option value="arial">Arial</option>
+                        <option value="arial-black">Arial Black</option>
+                        <option value="american">American Type Writer</option>
+                        <option value="andale">Andale Mono</option>
+                        <option value="comic">Comics Sans Ms</option>
+                        <option value="helvetica">Helvetica</option>
+                        <option value="verdana">Verdana</option>
+                        <option value="times">Times New Roman</option>
+                    </select>
+                    <div class="fuente">
+                        <div>
+                            <label for="tamaño"></label>
+                            <input type="number" value="12" min="12" class="tamaño-fuente contenedor-input">
+                        </div>
+                        <div>
+                            <label for="posicion-fuente"></label>
+                            <input type="text" class="posicion-fuente contenedor-input">
+                        </div>
+                        <div>
+                            <label for="posicion-fuente"></label>
+                            <input type="text" class="posicion-fuente contenedor-input">
+                        </div>
+                        <div>
+                            <label for="posicion-fuente"></label>
+                            <input type="text" class="posicion-fuente contenedor-input">
+                        </div>
+                    </div>
+                    <div class="fondo">
+                        <div>
+                            <p class="subtitulos-columna">COLOR</p>
+                            <div class="icono-color">
+                                <label for="color"></label>
+                                <input type="color" value="#FFFFFF">#FFFFFF
+                            </div>
+                        </div>
+                        <div>
+                            <p class="subtitulos-columna">FONDO</p>
+                            <div class="icono-color">
+                                <label for="opciones-de-color"></label>
+                                <input type="color" value="#FFFFFF">#FFFFFF
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor-check">
+                        <label for="fondo-transparente"></label>
+                        <div><input type="checkbox" name="fondo" id="fondo-transparente"></div>
+                        <div>Fondo transparente</div>
+                    </div>
+
+                    <p class="subtitulos-columna">CONTORNO
+                    </p>
+                    <div class="contorno">
+                        <div><label for="sin-contorno"></label>
+                            <input type="text" class="contenedor-input contenedor-contorno" placeholder="Ninguno">
+                        </div>
+                        <div><label for="contorno-claro"></label>
+                            <input type="text" class="contenedor-input contenedor-contorno" placeholder="Claro">
+                        </div>
+                        <div><label for="contorno-oscuro"></label>
+                            <input type="text" class="contenedor-input contenedor-contorno" placeholder="oscuro">
+                        </div>
+                    </div>
+                    <p class="subtitulos-columna">ESPACIADO
+                    </p>
+                    <label for="espaciado"></label>
+                    <input type="number" value="35"  min="10" max="50" class="contenedor-input">
+                    <p class="subtitulos-columna">INTERLINEADO
+                    </p>
+                    <label for="interlineado"></label>
+                    <select name="interlineado" id="opciones-interlineado" class="contenedor-input">
+                        <option value="0.8">0.8</option>
+                        <option value="1">1</option>
+                        <option value="1.2" selected>1.2</option>
+                        <option value="1.5">1.5</option>
+                        <option value="2">2</option>
+                        <option value="2.5">2.5</option>
+                    </select>
+                </form>
+            </div>
+        </aside>
     </div>
-
-
-    <!--COLUMNA TEXTO
-
-    <aside>
-        <h2>TEXTO</h2>
-        <div>
-            <form>
-                <label for="superior">SUPERIOR</label>
-                <input type="text">
-                <input type="checkbox" name="sintextosuperior" id="superior">
-                <label for="sin-texto">Sin texto superior</label>
-                <label for="inferior">INFERIOR</label>
-                <input type="text">
-                <input type="checkbox" name="sintextosuperior" id="superior">
-                <label for="sin-texto">Sin texto inferior</label>
-                <label for="fuente">FUENTE</label>
-                <select name="tipos-de-letra" id="opciones-letra">
-                    <option value="impact">Impact</option>
-                    <option value="arial">Arial</option>
-                    <option value="arialb">Arial Black</option>
-                    <option value="american">American Typewriter</option>
-                    <option value="andale">Andale Mono</option>
-                    <option value="comic">Comic Sans Ms</option>
-                    <option value="helvetica">Helvetica</option>
-                    <option value="impact">Impact</option>
-                    <option value="vendana">Vendana</option>
-                    <option value="times">Times New Roman</option>
-                </select>
-                <input type="number">
-                <label for="fondo">COLOR</label>
-                <input type="color">
-                <label for="fondo">FONDO</label>
-                <input type="color">
-                <input type="checkbox" name="fondotransparente" id="fondo">
-                <label for="fondo">Fondo transparente</label>
-                <label for="contorno">CONTORNO</label>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <label for="espaciado">ESPACIADO</label>
-                <input type="number">
-                <label for="interlineado">INTERLINEADO</label>
-                <select name="interlineado" id="opciones-interlineado">
-                    <option value="1,2">1,2</option>
-                    <option value="0,8">0,8</option>
-                    <option value="1">1</option>
-                    <option value="1,5">1,5</option>
-                    <option value="2">2</option>
-                    <option value="2,5">2,5</option>
-                </select>
-    </aside>-->
     <script src="script.js"></script>
 </body>
 
