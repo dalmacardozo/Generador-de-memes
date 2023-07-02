@@ -186,4 +186,7 @@ body {
     color: black;
 }
 
+.oculto {
+    display: none;
+}
 
