@@ -107,7 +107,7 @@ body {
     padding: 7px 10px
 }
 
-.contenedor-input, .icono-color, .contenedor-opciones-color {
+.contenedor-input, .contenedor-opciones-color, .icono-color {
     background-color: #393e49;
     border-radius: 5px;
     padding: 10px;
@@ -141,9 +141,14 @@ body {
     margin-top: 5px;
 }
 .posicion-fuente {
-    width: 15px;
-    padding: 10px;
+    padding: 7px;
+    padding-left: 15px;
     margin: 2px;
+}
+
+.icono-posicion {
+    font-size: 18px;
+    
 }
 
 .tamaño-fuente {
