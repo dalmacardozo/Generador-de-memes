@@ -28,17 +28,13 @@
             <button id="boton-modo" class="botones"><span class="navegacion"><i class="fa-solid fa-lightbulb"></i>Modo oscuro</span></button>
         </header>
         <main>
-            <div>
-                <h1 class="texto-superior-inferior">
+            <div class="texto-superior-inferior" id="texto-superior">
                     TOP TEXT
-                </h1>
             </div>
             <div class="centro-texto" id="meme-img">
             </div>
-            <div>
-                <h1 class="texto-superior-inferior">
+            <div class="texto-superior-inferior">
                     BOTTOM TOP
-                </h1>
             </div>
         </main>
         <button class="descarga-boton">
@@ -63,7 +59,7 @@
                             <p class="subtitulos-columna">FONDO</p>
                         </label>
                         <div class="icono-color">
-                        <input type="color" value="#FFFFFF" id="opciones-de-color">#FFFFFF</div>
+                        <input type="color" value="#FFFFFF" id="input-color">#FFFFFF</div>
                     </div>
                     <div class="contenedor-opciones-color">
                         <select name="opacidad" id="opciones-color" class="contenedor-input">
@@ -112,7 +108,7 @@
                     <p class="subtitulos-columna">SUPERIOR
                     </p>
                     <label for="superior"></label>
-                    <input type="text" class="contenedor-input" placeholder="TOP TEXT">
+                    <input type="text" class="contenedor-input" placeholder="TOP TEXT" id="top-text">
                     <div class="contenedor-check">
                         <label for="sin-texto-superior"></label>
                         <div><input type="checkbox" name="top-tex" id="superior"></div>
@@ -130,8 +126,8 @@
                     <p class="subtitulos-columna">FUENTE
                     </p>
                     <label for="fuente"></label>
-                    <select name="tipo-de-fuente" id="fuente" class="contenedor-input">
-                        <option value="impact">Impact</option>
+                    <select name="tipo-de-fuente" id="fuentes" class="contenedor-input">
+                        <option value="impact" id="impact">Impact</option>
                         <option value="arial">Arial</option>
                         <option value="arial-black">Arial Black</option>
                         <option value="american">American Type Writer</option>

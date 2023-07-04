@@ -52,7 +52,6 @@ inputUrl.addEventListener('input', (e) => changeBackground(e))
 //INPUT RANGE
 
 const brillo = document.getElementById('brillo-input')
-console.log(brillo)
 const opacidad = document.getElementById('opacidad-input')
 const contraste = document.getElementById('contraste-input')
 const desenfoque = document.getElementById('desenfoque-input')
@@ -63,29 +62,43 @@ const negativo = document.getElementById('negativo-input')
 const saturado = document.getElementById('saturado-input')
 
 const filtros = (e) => {
-    console.log(e.target.value)
     imgUrl.style.filter = `brightness(${brillo.value}) opacity(${opacidad.value}) blur(${desenfoque.value}px) contrast(${contraste.value}%) grayscale(${grises.value}%) hue-rotate(${hue.value}deg) sepia(${sepia.value}%) saturate(${saturado.value}%) invert(${negativo.value})`
 
 }
 
-brillo.addEventListener('input', (e) => filtros(e))
-opacidad.addEventListener('input', (e) => filtros(e))
-contraste.addEventListener('input', (e) => filtros(e)) 
-desenfoque.addEventListener('input', (e) => filtros(e))
-grises.addEventListener('input', (e) => filtros(e))
-sepia.addEventListener('input', (e) => filtros(e))
-hue.addEventListener('input', (e) => filtros(e))
-negativo.addEventListener('input', (e) => filtros(e))
-saturado.addEventListener('input', (e) => filtros(e))
+brillo.addEventListener('input', (brillo) => filtros(brillo))
+opacidad.addEventListener('input', (opacidad) => filtros(opacidad))
+contraste.addEventListener('input', (contraste) => filtros(contraste)) 
+desenfoque.addEventListener('input', (desenfoque) => filtros(desenfoque))
+grises.addEventListener('input', (grises) => filtros(grises))
+sepia.addEventListener('input', (sepia) => filtros(sepia))
+hue.addEventListener('input', (hue) => filtros(hue))
+negativo.addEventListener('input', (negativo) => filtros(negativo))
+saturado.addEventListener('input', (saturado) => filtros(saturado))
+
+//TOP-TEX
+
+const divText = document.getElementById('texto-superior')
+const inputText = document.getElementById('top-text')
+
+
+const cambioDeTexto = (e) => {
+    divText.innerText = e.target.value.innerHTML
+
+}
+
+inputText.addEventListener('input', (e) => cambioDeTexto(e))
+
 
 
 //INPUT COLOR
 
-//const inputColor = document.getElementsById('opciones-de-color')
+//const inputColor = document.getElementsById('input-color')
 
 
 //const cambioDeColor = (c)  => {
-    //imgUrl.style.backgroundColor = `('${c.target.value}')`}
+ //imgUrl.bachgroundColor = `('${c.target.value}')`}
+
 
 
 //inputColor.addEventListener('input', (color) => cambioDeColor(color))
