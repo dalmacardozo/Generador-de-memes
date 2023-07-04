@@ -26,6 +26,7 @@ body {
 
 .navegacion {
     padding: 10px;
+    
 }
 
 .fondo-header {
@@ -41,6 +42,9 @@ body {
     width: 600px;
     height: 400px;
     background-color: black;
+    background-size: cover;
+    background-repeat: 'no-repeat';
+    background-position: center;
 }
 
 .texto-superior-inferior {
@@ -63,6 +67,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Wix Madefor Display', sans-serif;
     border: none;
+    cursor: pointer;
 }
 
 .botones {
@@ -71,6 +76,14 @@ body {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    cursor: pointer;
+}
+
+.botones:hover {
+    background-color: #5a5d68;
+    border-radius: 5px;
+    padding: 5px;
+    
 
 }
 
@@ -121,6 +134,7 @@ body {
     margin-right: 60px;
     margin-top: 20px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .subtitulos-columna {
