@@ -120,12 +120,19 @@ body {
     padding: 7px 10px
 }
 
-.contenedor-input, .contenedor-opciones-color, .icono-color {
+.contenedor-input {
     background-color: #393e49;
     border-radius: 5px;
     padding: 10px;
     border-style: hidden;
     color: white;
+    
+}
+
+.contenedor-select{
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
     
 }
 
@@ -146,7 +153,21 @@ body {
     accent-color: #5a5d68;
 }
 
+input[type="color"]{
+appearance: none;
+background-color: transparent;
+width: 20px;
+height: 15px;
+border: none;}
 
+input[type="color"]::-webkit-color-swatch-wrapper {
+padding: 0;
+
+}
+input[type="color"]::-webkit-color-swatch{
+   border: none; 
+   border-radius: 100%;
+}
 
 /**COLUMNA-TEXTO**/
 
@@ -158,6 +179,7 @@ body {
     padding: 7px;
     padding-left: 15px;
     margin: 2px;
+    cursor: pointer;
 }
 
 .icono-posicion {
@@ -177,7 +199,8 @@ body {
 }
 
 .contenedor-contorno {
-    width: 50px;
+    width: 70px;
+    cursor: pointer;
 }
 
 /**MODO CLARO**/

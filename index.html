@@ -58,11 +58,11 @@
                         <label for="fondo">
                             <p class="subtitulos-columna">FONDO</p>
                         </label>
-                        <div class="icono-color">
-                        <input type="color" value="#FFFFFF" id="input-color">#FFFFFF</div>
-                    </div>
-                    <div class="contenedor-opciones-color">
-                        <select name="opacidad" id="opciones-color" class="contenedor-input">
+                        <!--<div class="icono-color">-->
+                        <span class="contenedor-input"><input type="color" value="#FFFFFF" id="input-color"><span>#FFFFFF</span></span></div>
+                    <!--</div>-->
+                    <!--<div class="contenedor-opciones-color">-->
+                        <select name="opacidad" id="opciones-color" class="contenedor-input contenedor-select">
                             <option value="ninguno">Ninguno</option>
                             <option value="aclarar">Aclarar</option>
                             <option value="oscurecer">Oscurecer</option>
@@ -70,7 +70,7 @@
                             <option value="luminosidad">Luminosidad</option>
                             <option value="multiplicar">Multiplicar</option>
                         </select>
-                </div>
+                <!--</div>-->
             </div>
                     <p class="subtitulos-columna titulo-filtro">FILTROS</p>
                     <label for="brillo" class="sub-filtros">BRILLO</label>
@@ -156,14 +156,14 @@
                     <div class="fondo">
                         <div>
                             <p class="subtitulos-columna">COLOR</p>
-                            <div class="icono-color">
+                            <div class="contenedor-input">
                                 <label for="color"></label>
                                 <input type="color" value="#FFFFFF">#FFFFFF
                             </div>
                         </div>
                         <div>
                             <p class="subtitulos-columna">FONDO</p>
-                            <div class="icono-color">
+                            <div class="contenedor-input">
                                 <label for="opciones-de-color"></label>
                                 <input type="color" value="#FFFFFF">#FFFFFF
                             </div>
@@ -174,19 +174,18 @@
                         <div><input type="checkbox" name="fondo" id="fondo-transparente"></div>
                         <div>Fondo transparente</div>
                     </div>
-
                     <p class="subtitulos-columna">CONTORNO
                     </p>
                     <div class="contorno">
-                        <div><label for="sin-contorno"></label>
-                            <input type="text" class="contenedor-input contenedor-contorno" placeholder="Ninguno">
-                        </div>
-                        <div><label for="contorno-claro"></label>
-                            <input type="text" class="contenedor-input contenedor-contorno" placeholder="Claro">
-                        </div>
-                        <div><label for="contorno-oscuro"></label>
-                            <input type="text" class="contenedor-input contenedor-contorno" placeholder="oscuro">
-                        </div>
+                        <button class="contenedor-input contenedor-contorno" >
+                            Ninguno
+                        </button>
+                        <button class="contenedor-input contenedor-contorno">
+                            Claro
+                        </button>
+                        <button class="contenedor-input contenedor-contorno">
+                            Oscuro
+                        </button>
                     </div>
                     <p class="subtitulos-columna">ESPACIADO
                     </p>
