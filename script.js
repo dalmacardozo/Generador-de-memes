@@ -43,6 +43,7 @@ botonText.addEventListener('click', ()=> ocultoAsideText())
 const inputUrl = document.getElementById('input-img')
 const imgUrl = document.getElementById('meme-img')
 
+
 const changeBackground = (e) => {
     imgUrl.style.backgroundImage = `url('${e.target.value}')`
  }
@@ -76,29 +77,18 @@ hue.addEventListener('input', (hue) => filtros(hue))
 negativo.addEventListener('input', (negativo) => filtros(negativo))
 saturado.addEventListener('input', (saturado) => filtros(saturado))
 
-//TOP-TEX
-
-const divText = document.getElementById('texto-superior')
-const inputText = document.getElementById('top-text')
-
-
-const cambioDeTexto = (e) => {
-    divText.innerText = e.target.value.innerHTML
-
-}
-
-inputText.addEventListener('input', (e) => cambioDeTexto(e))
-
-
 
 //INPUT COLOR
 
-//const inputColor = document.getElementsById('input-color')
+const inputColor = document.getElementById('input-color')
 
 
-//const cambioDeColor = (c)  => {
- //imgUrl.bachgroundColor = `('${c.target.value}')`}
+const cambioDeColor = ()  => { 
+ imgUrl.style.backgroundColor = inputColor.value
+ console.log(inputColor)
+}
+
+inputColor.addEventListener('input', () => cambioDeColor())
 
 
 
-//inputColor.addEventListener('input', (color) => cambioDeColor(color))

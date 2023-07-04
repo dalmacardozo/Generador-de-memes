@@ -203,6 +203,10 @@ input[type="color"]::-webkit-color-swatch{
     cursor: pointer;
 }
 
+.color-text {
+    margin-right: 5px;
+}
+
 /**MODO CLARO**/
 
 .modo-claro {
