@@ -113,18 +113,18 @@ const textoInferiorInput = document.getElementById('bottom-text')
 
 const cambioDeTextoSuperior = () =>  {
         contenedorText[0].innerText = `${textoSuperiorInput.value}`
-        console.log(textoSuperiorInput.innerText)
 
 }
 
 const cambioDeTextoInferior = () => {
     contenedorText[1].innerText = `${textoInferiorInput.value}`
-    console.log(textoInferiorInput.innerText)
 }
 
 
 textoSuperiorInput.addEventListener('input', () => cambioDeTextoSuperior())
 textoInferiorInput.addEventListener('input', () => cambioDeTextoInferior())
+
+
 
 
 
