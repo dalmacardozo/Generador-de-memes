@@ -35,8 +35,8 @@ const ocultoAsideText = () => {
     asideImg.classList.add('oculto');
 }
 
-botonImg.addEventListener('click', ()=> ocultoAsideImg())
-botonText.addEventListener('click', ()=> ocultoAsideText())
+botonImg.addEventListener('click', () => ocultoAsideImg())
+botonText.addEventListener('click', () => ocultoAsideText())
 
 //URL-IMAGEN
 
@@ -46,7 +46,7 @@ const imgUrl = document.getElementById('meme-img')
 
 const changeBackground = (e) => {
     imgUrl.style.backgroundImage = `url('${e.target.value}')`
- }
+}
 
 inputUrl.addEventListener('input', (e) => changeBackground(e))
 
@@ -69,7 +69,7 @@ const filtros = (e) => {
 
 brillo.addEventListener('input', (brillo) => filtros(brillo))
 opacidad.addEventListener('input', (opacidad) => filtros(opacidad))
-contraste.addEventListener('input', (contraste) => filtros(contraste)) 
+contraste.addEventListener('input', (contraste) => filtros(contraste))
 desenfoque.addEventListener('input', (desenfoque) => filtros(desenfoque))
 grises.addEventListener('input', (grises) => filtros(grises))
 sepia.addEventListener('input', (sepia) => filtros(sepia))
@@ -78,17 +78,38 @@ negativo.addEventListener('input', (negativo) => filtros(negativo))
 saturado.addEventListener('input', (saturado) => filtros(saturado))
 
 
-//INPUT COLOR
+//INPUT COLOR 
 
 const inputColor = document.getElementById('input-color')
+const inputColorText = document.getElementById('input-color-texto')
+const contenedorText = document.getElementsByClassName('texto-superior-inferior')
+const inputColorFondo = document.getElementById('input-color-fondo')
 
 
-const cambioDeColor = ()  => { 
- imgUrl.style.backgroundColor = inputColor.value
- console.log(inputColor)
+const cambioDeColor = () => {
+    imgUrl.style.backgroundColor = inputColor.value
+    console.log(inputColor)
 }
 
+const cambioDeColorText = () => {
+    contenedorText[0].style.color = inputColorText.value
+    contenedorText[1].style.color = inputColorText.value
+}
+
+const cambioDeFondo = () => {
+    contenedorText[0].style.backgroundColor = inputColorFondo.value
+    contenedorText[1].style.backgroundColor = inputColorFondo.value
+}
+
+
+
 inputColor.addEventListener('input', () => cambioDeColor())
+inputColorText.addEventListener('input', () => cambioDeColorText())
+inputColorFondo.addEventListener('input', () => cambioDeFondo())
+
+
+
+
 
 
 
