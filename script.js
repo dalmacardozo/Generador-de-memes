@@ -88,7 +88,6 @@ const inputColorFondo = document.getElementById('input-color-fondo')
 
 const cambioDeColor = () => {
     imgUrl.style.backgroundColor = inputColor.value
-    console.log(inputColor)
 }
 
 const cambioDeColorText = () => {
@@ -102,14 +101,30 @@ const cambioDeFondo = () => {
 }
 
 
-
 inputColor.addEventListener('input', () => cambioDeColor())
 inputColorText.addEventListener('input', () => cambioDeColorText())
 inputColorFondo.addEventListener('input', () => cambioDeFondo())
 
 
+//INPUT - CAMBIO DE TEXTO
+
+const textoSuperiorInput =  document.getElementById('top-text')
+const textoInferiorInput = document.getElementById('bottom-text')
+
+const cambioDeTextoSuperior = () =>  {
+        contenedorText[0].innerText = `${textoSuperiorInput.value}`
+        console.log(textoSuperiorInput.innerText)
+
+}
+
+const cambioDeTextoInferior = () => {
+    contenedorText[1].innerText = `${textoInferiorInput.value}`
+    console.log(textoInferiorInput.innerText)
+}
 
 
+textoSuperiorInput.addEventListener('input', () => cambioDeTextoSuperior())
+textoInferiorInput.addEventListener('input', () => cambioDeTextoInferior())
 
 
 
