@@ -20,7 +20,10 @@ const modoClaro = () => {
     botonModo.classList.add('botones-claro')
 }
 
+
 botonModoClaro.addEventListener('click', () => modoClaro())
+
+
 
 //Displey oculto en columnas asaid
 
@@ -37,6 +40,9 @@ const ocultoAsideText = () => {
 
 botonImg.addEventListener('click', () => ocultoAsideImg())
 botonText.addEventListener('click', () => ocultoAsideText())
+
+
+
 
 //URL-IMAGEN
 
@@ -123,6 +129,34 @@ const cambioDeTextoInferior = () => {
 
 textoSuperiorInput.addEventListener('input', () => cambioDeTextoSuperior())
 textoInferiorInput.addEventListener('input', () => cambioDeTextoInferior())
+
+
+//TIPO DE FUENTE
+
+const select = document.getElementById('fuentes')
+
+
+const cambioDeFuente = () => {
+contenedorText[0].style.fontFamily = `${select.value}`
+contenedorText[1].style.fontFamily = `${select.value}`
+
+}
+
+select.addEventListener('change', () => cambioDeFuente())
+
+//BOTON DE DESCARGA
+
+//const meme = document.getElementById('img-meme')
+//const downloadButtom = document.getElementById('descarga-btn')
+
+
+//const downloadMeme = () => {
+    //domtoimage.toBlob(meme).then(function (blob) {
+      //window.saveAs(blob, "mi-meme.png");
+    //});
+  //};
+
+  //downloadButtom.addEventListener("çlick", () => downloadMeme());
 
 
 

@@ -15,6 +15,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="icono.svg">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+      integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>  
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+      integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 </head>
 
 <body id="modo-oscuro">
@@ -29,15 +41,16 @@
             <button id="boton-modo" class="botones"><span class="navegacion"><i class="fa-solid fa-lightbulb"></i>Modo oscuro</span></button>
         </header>
         <main>
+            <div id="img-meme">
             <div class="texto-superior-inferior">
                     TOP TEXT
             </div>
             <div class="centro-texto" id="meme-img"></div>
             <div class="texto-superior-inferior">
                     BOTTOM TEXT
-            </div>
+            </div></div>
         </main>
-        <button class="descarga-boton">
+        <button class="descarga-boton" id="descarga-btn">
             <i class="fa-solid fa-download"></i> Descargar meme</button>
     </div>
 
@@ -127,15 +140,15 @@
                     </p>
                     <label for="fuente"></label>
                     <select name="tipo-de-fuente" id="fuentes" class="contenedor-input">
-                        <option value="impact" id="impact">Impact</option>
-                        <option value="arial">Arial</option>
+                        <option value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" id="impact">Impact</option>
+                        <option value="Arial, Helvetica, sans-serif">Arial</option>
                         <option value="arial-black">Arial Black</option>
                         <option value="american">American Type Writer</option>
                         <option value="andale">Andale Mono</option>
                         <option value="comic">Comics Sans Ms</option>
                         <option value="helvetica">Helvetica</option>
-                        <option value="verdana">Verdana</option>
-                        <option value="times">Times New Roman</option>
+                        <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana</option>
+                        <option value="'Times New Roman', Times, serif">Times New Roman</option>
                     </select>
                     <div class="fuente">
                         <div>
