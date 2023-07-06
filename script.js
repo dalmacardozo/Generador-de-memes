@@ -144,6 +144,32 @@ contenedorText[1].style.fontFamily = `${select.value}`
 
 select.addEventListener('change', () => cambioDeFuente())
 
+//INPUT CHECKED
+
+const checkedTop = document.getElementById('superior');
+const checkedBottom = document.getElementById('inferior');
+
+const checked = () => {
+    if (checkedTop.checked) {
+        contenedorText[0].classList.add('oculto')
+     } else {
+         contenedorText[0].classList.remove('oculto')
+     }
+    
+}
+
+const checkBottom = () => {
+    if (checkedBottom.checked) {
+       contenedorText[1].classList.add('oculto')
+    } else {
+        contenedorText[1].classList.remove('oculto')
+    }
+    
+}
+
+checkedTop.addEventListener('change', () => checked())
+checkedBottom.addEventListener('change', () => checkBottom())
+
 //BOTON DE DESCARGA
 
 //const meme = document.getElementById('img-meme')
