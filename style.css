@@ -47,6 +47,7 @@ body {
     background-position: center;
 }
 
+
 .texto-superior-inferior {
     background-color: white;
     color: black;
@@ -121,13 +122,14 @@ body {
 }
 
 .contenedor-input {
-    background-color: #393e49;
+    background-color: #7b818d;
     border-radius: 5px;
     padding: 10px;
     border-style: hidden;
     color: white;
     
 }
+
 
 .contenedor-select{
     padding: 10px;
@@ -236,4 +238,6 @@ input[type="color"]::-webkit-color-swatch{
 .oculto {
     display: none;
 }
+
+
 

@@ -10,19 +10,24 @@ const asideText = document.getElementById('aside-text');
 const botonModo = document.getElementById('boton-modo');
 const botonModoClaro = document.getElementById('boton-modo')
 
+
 const modoClaro = () => {
-    body.classList.add('modo-claro');
-    header.classList.add('modo-claro-header');
-    aside[0].classList.add('modo-claro-aside');
-    aside[1].classList.add('modo-claro-aside');
-    botonImg.classList.add('botones-claro');
-    botonText.classList.add('botones-claro')
-    botonModo.classList.add('botones-claro')
-}
+    body.classList.toggle('modo-claro');
+    header.classList.toggle('modo-claro-header');
+    aside[0].classList.toggle('modo-claro-aside');
+    aside[1].classList.toggle('modo-claro-aside');
+    botonImg.classList.toggle('botones-claro');
+    botonText.classList.toggle('botones-claro');
+    botonModo.classList.toggle('botones-claro');
+    if (body.classList.contains('modo-claro')) {
+        botonModo.innerText = ('🌇 Modo claro') }
+        else {
+            botonModo.innerText = ('🌆 Modo oscuro')
+        }
+    }
 
 
 botonModoClaro.addEventListener('click', () => modoClaro())
-
 
 
 //Displey oculto en columnas asaid
@@ -170,19 +175,45 @@ const checkBottom = () => {
 checkedTop.addEventListener('change', () => checked())
 checkedBottom.addEventListener('change', () => checkBottom())
 
+//BOTONES DE ALINEACIÓN DE FUENTE
+
+const btnLeft = document.getElementById('btn-left')
+const btnCenter = document.getElementById('btn-center')
+const btnRight = document.getElementById('btn-right')
+
+const posicionI = () => {
+    contenedorText[0].style.textAlign = 'left';
+    contenedorText[1].style.textAlign = 'left'
+}
+
+const posicionC = () => {
+    contenedorText[0].style.textAlign = 'center'
+    contenedorText[1].style.textAlign = 'center'
+}
+
+const posicionR = () => {
+    contenedorText[0].style.textAlign = 'right'
+    contenedorText[1].style.textAlign = 'right'
+}
+
+btnLeft.addEventListener('click', () => posicionI())
+btnCenter.addEventListener('click', () => posicionC())
+btnRight.addEventListener('click', () => posicionR())
+
+
 //BOTON DE DESCARGA
 
-//const meme = document.getElementById('img-meme')
-//const downloadButtom = document.getElementById('descarga-btn')
+const meme = document.getElementById("meme-container")
+const downloadButtom = document.getElementById("descarga-btn")
 
 
-//const downloadMeme = () => {
-    //domtoimage.toBlob(meme).then(function (blob) {
-      //window.saveAs(blob, "mi-meme.png");
-    //});
-  //};
+const downloadMeme = () => {
+    domtoimage.toBlob(meme).then(function (blob) {
+      window.saveAs(blob, "mi-meme.png");
+    });
+  };
 
-  //downloadButtom.addEventListener("çlick", () => downloadMeme());
+downloadButtom.addEventListener("click", () => downloadMeme());
 
 
 
