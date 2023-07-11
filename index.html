@@ -45,11 +45,11 @@
         <main>
             <div id="meme-container">
                 <div class="texto-superior-inferior">
-                    TOP TEXT
+                    <p class="texto-superior-inferior">TOP TEXT</p>
                 </div>
                 <div class="centro-texto" id="meme-img"></div>
                 <div class="texto-superior-inferior">
-                    BOTTOM TEXT
+                    <p class="texto-superior-inferior">BOTTOM TEXT</p>
                 </div>
             </div>
         </main>
@@ -81,12 +81,12 @@
                         <!--</div>-->
                         <!--<div class="contenedor-opciones-color">-->
                         <select name="opacidad" id="opciones-color" class="contenedor-input contenedor-select">
-                            <option value="ninguno">Ninguno</option>
-                            <option value="aclarar">Aclarar</option>
-                            <option value="oscurecer">Oscurecer</option>
-                            <option value="diferencia">Diferencia</option>
-                            <option value="luminosidad">Luminosidad</option>
-                            <option value="multiplicar">Multiplicar</option>
+                            <option value="unset">Ninguno</option>
+                            <option value="lighten">Aclarar</option>
+                            <option value="darken">Oscurecer</option>
+                            <option value="difference">Diferencia</option>
+                            <option value="luminosity">Luminosidad</option>
+                            <option value="multiply">Multiplicar</option>
                         </select>
                         <!--</div>-->
                     </div>
@@ -160,7 +160,7 @@
                     <div class="fuente">
                         <div>
                             <label for="tamaño"></label>
-                            <input type="number" value="12" min="12" class="tamaño-fuente contenedor-input">
+                            <input type="number" value="40" min="12" class="tamaño-fuente contenedor-input" id="fuente-fontsize">
                         </div>
                         <button type="button" class="posicion-fuente contenedor-input" id="btn-left">
                             <div><i class="fa-solid fa-align-left icono-posicion"></i></div>

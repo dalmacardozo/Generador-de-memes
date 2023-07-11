@@ -73,7 +73,7 @@ const hue = document.getElementById('hue-input')
 const negativo = document.getElementById('negativo-input')
 const saturado = document.getElementById('saturado-input')
 
-const filtros = (e) => {
+const filtros = () => {
     imgUrl.style.filter = `brightness(${brillo.value}) opacity(${opacidad.value}) blur(${desenfoque.value}px) contrast(${contraste.value}%) grayscale(${grises.value}%) hue-rotate(${hue.value}deg) sepia(${sepia.value}%) saturate(${saturado.value}%) invert(${negativo.value})`
 
 }
@@ -102,13 +102,13 @@ const cambioDeColor = () => {
 }
 
 const cambioDeColorText = () => {
-    contenedorText[0].style.color = inputColorText.value
     contenedorText[1].style.color = inputColorText.value
+    contenedorText[3].style.color = inputColorText.value
 }
 
 const cambioDeFondo = () => {
-    contenedorText[0].style.backgroundColor = inputColorFondo.value
     contenedorText[1].style.backgroundColor = inputColorFondo.value
+    contenedorText[3].style.backgroundColor = inputColorFondo.value
 }
 
 
@@ -123,12 +123,12 @@ const textoSuperiorInput =  document.getElementById('top-text')
 const textoInferiorInput = document.getElementById('bottom-text')
 
 const cambioDeTextoSuperior = () =>  {
-        contenedorText[0].innerText = `${textoSuperiorInput.value}`
+        contenedorText[1].innerText = `${textoSuperiorInput.value}`
 
 }
 
 const cambioDeTextoInferior = () => {
-    contenedorText[1].innerText = `${textoInferiorInput.value}`
+    contenedorText[3].innerText = `${textoInferiorInput.value}`
 }
 
 
@@ -142,8 +142,8 @@ const select = document.getElementById('fuentes')
 
 
 const cambioDeFuente = () => {
-contenedorText[0].style.fontFamily = `${select.value}`
 contenedorText[1].style.fontFamily = `${select.value}`
+contenedorText[3].style.fontFamily = `${select.value}`
 
 }
 
@@ -153,27 +153,40 @@ select.addEventListener('change', () => cambioDeFuente())
 
 const checkedTop = document.getElementById('superior');
 const checkedBottom = document.getElementById('inferior');
+const checkedFondo = document.getElementById('fondo-transparente')
 
 const checked = () => {
     if (checkedTop.checked) {
-        contenedorText[0].classList.add('oculto')
+        contenedorText[1].classList.add('oculto')
      } else {
-         contenedorText[0].classList.remove('oculto')
+         contenedorText[1].classList.remove('oculto')
      }
     
 }
 
 const checkBottom = () => {
     if (checkedBottom.checked) {
-       contenedorText[1].classList.add('oculto')
+       contenedorText[3].classList.add('oculto')
     } else {
-        contenedorText[1].classList.remove('oculto')
+        contenedorText[3].classList.remove('oculto')
     }
     
 }
 
+const checkFondo = () => {
+    if (checkedFondo.checked) {
+       contenedorText[0].classList.add('oculto');
+       contenedorText[2].classList.add('oculto');
+    } else {
+        contenedorText[0].classList.remove('oculto')
+        contenedorText[2].classList.remove('oculto')
+    }
+}
+
 checkedTop.addEventListener('change', () => checked())
 checkedBottom.addEventListener('change', () => checkBottom())
+checkedFondo.addEventListener('change', () => checkFondo())
+
 
 //BOTONES DE ALINEACIÓN DE FUENTE
 
@@ -182,18 +195,18 @@ const btnCenter = document.getElementById('btn-center')
 const btnRight = document.getElementById('btn-right')
 
 const posicionI = () => {
-    contenedorText[0].style.textAlign = 'left';
-    contenedorText[1].style.textAlign = 'left'
+    contenedorText[1].style.textAlign = 'left';
+    contenedorText[3].style.textAlign = 'left'
 }
 
 const posicionC = () => {
-    contenedorText[0].style.textAlign = 'center'
     contenedorText[1].style.textAlign = 'center'
+    contenedorText[3].style.textAlign = 'center'
 }
 
 const posicionR = () => {
-    contenedorText[0].style.textAlign = 'right'
     contenedorText[1].style.textAlign = 'right'
+    contenedorText[3].style.textAlign = 'right'
 }
 
 btnLeft.addEventListener('click', () => posicionI())
@@ -214,6 +227,21 @@ const downloadMeme = () => {
   };
 
 downloadButtom.addEventListener("click", () => downloadMeme());
+
+//FONTSIZE FUENTE
+
+const tamañoInput = document.getElementById('fuente-fontsize')
+
+const cambioTamañoDeFuente = () => {
+    contenedorText[1].style.fontSize = `${tamañoInput.value}px`
+    contenedorText[3].style.fontSize = `${tamañoInput.value}px`
+    
+    }
+
+tamañoInput.addEventListener('input', () => cambioTamañoDeFuente())
+
+
+
 
 
 

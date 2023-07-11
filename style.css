@@ -51,7 +51,7 @@ body {
 .texto-superior-inferior {
     background-color: white;
     color: black;
-    height: 90px;
+    padding: 10px;
     margin: 0;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -71,9 +71,18 @@ body {
     cursor: pointer;
 }
 
+.descarga-boton:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition-property: box-shadow;
+    transition-duration: 0.2s;
+}
+
+
 .botones {
     background-color: #191e2b;
-    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    border: transparent;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -84,6 +93,8 @@ body {
     background-color: #5a5d68;
     border-radius: 5px;
     padding: 5px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
     
 
 }
@@ -237,7 +248,7 @@ input[type="color"]::-webkit-color-swatch{
 
 .oculto {
     display: none;
+    
 }
-
 
 
