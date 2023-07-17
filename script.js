@@ -313,6 +313,22 @@ contornoOscuro.addEventListener("click", () => contornoNegro())
 contornoClaro.addEventListener("click", () => contornoBlanco())
 sinContorno.addEventListener("click", () => contornoNone())
 
+//BOTON CERRAR
+
+const botonCerrarImg = document.getElementById('boton-cerrar-img')
+const botonCerrarText = document.getElementById('boton-cerrar-text')
+
+
+const funcionCerrar = () => {
+    asideImg.classList.add('oculto');
+}
+
+const funcionCerrarText = () => {
+    asideText.classList.add('oculto');
+}
+
+botonCerrarImg.addEventListener("click", () => funcionCerrar())
+botonCerrarText.addEventListener("click", () => funcionCerrarText())
 
 
 
