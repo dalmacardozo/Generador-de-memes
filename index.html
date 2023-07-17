@@ -87,9 +87,11 @@
                             <option value="luminosity">Luminosidad</option>
                             <option value="multiply">Multiplicar</option>
                         </select>
+                    </form>
                         <!--</div>-->
                     </div>
                     <p class="subtitulos-columna titulo-filtro">FILTROS</p>
+                    <form class="contenedor-flex">
                     <label for="brillo" class="sub-filtros">BRILLO</label>
                     <input type="range" class="range" min="0" max="1" value="1" step="0.1" id="brillo-input">
                     <label for="opacidad" class="sub-filtros">OPACIDAD</label>
@@ -108,8 +110,8 @@
                     <input type="range" class="range" min="100" max="1000" step="10" value="100" id="saturado-input">
                     <label for="negativo" class="sub-filtros">NEGATIVO</label>
                     <input type="range" class="range" min="0" max="1" step="0.1" value="0" id="negativo-input">
-                    <button class="contenedor-input contenedor-restauracion">Reestablecer filtros</button>
-                </form>
+                    <input type="reset" class="contenedor-input contenedor-restauracion" value="Reestablecer filtros" id="reset">
+                </form> 
             </div>
         </aside>
     </div>

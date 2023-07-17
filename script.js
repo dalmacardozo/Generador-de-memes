@@ -240,6 +240,20 @@ const cambioTamañoDeFuente = () => {
 
 tamañoInput.addEventListener('input', () => cambioTamañoDeFuente())
 
+//REESTABLECER FILTROS
+
+const inputReset = document.getElementById('reset')
+console.log(inputReset)
+
+const reset = () => {
+    imgUrl.style.filter = `brightness(1) opacity(1) blur(0px) contrast(100%) grayscale(0%) hue-rotate(0deg) sepia(0%) saturate(100%) invert(0)`
+
+}
+
+inputReset.addEventListener("click", reset)
+
+
+
 
 
 
