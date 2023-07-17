@@ -271,5 +271,8 @@ input[type="color"]::-webkit-color-swatch{
 @media (max-width: 930px) {
     .columna {
         width: 100vw;
+ } .body {
+    justify-content: center;
  }
     }
+
