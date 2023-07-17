@@ -287,6 +287,32 @@ const opcionInterlineado = () => {
 
 interlineado.addEventListener('input', () => opcionInterlineado())
 
+//CONTORNO
+
+const contornoOscuro = document.getElementById('contorno-oscuro')
+const contornoClaro = document.getElementById('contorno-claro')
+const sinContorno = document.getElementById('sin-contorno')
+
+const contornoNegro = () => {
+        contenedorText[0].style.textShadow = '-2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black';
+        contenedorText[1].style.textShadow = '-2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black';
+}
+
+const contornoBlanco = () => {
+    contenedorText[0].style.textShadow = '-2px -2px 1px white, 2px 2px 1px white, -2px 2px 1px white, 2px -2px 1px white';
+    contenedorText[1].style.textShadow = '-2px -2px 1px white, 2px 2px 1px white, -2px 2px 1px white, 2px -2px 1px white';
+}
+
+const contornoNone = () => {
+    contenedorText[0].style.textShadow = 'none' ;
+    contenedorText[1].style.textShadow = 'none' ;
+}
+
+
+contornoOscuro.addEventListener("click", () => contornoNegro())
+contornoClaro.addEventListener("click", () => contornoBlanco())
+sinContorno.addEventListener("click", () => contornoNone())
+
 
 
 
