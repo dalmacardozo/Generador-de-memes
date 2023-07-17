@@ -175,11 +175,11 @@ const checkBottom = () => {
 
 const checkFondo = () => {
     if (checkedFondo.checked) {
-       contenedorText[0].classList.add('oculto');
-       contenedorText[1].classList.add('oculto');
-    } else {
-        contenedorText[0].classList.remove('oculto')
-        contenedorText[1].classList.remove('oculto')
+       contenedorText[0].style.backgroundColor = 'transparent';
+       contenedorText[1].style.backgroundColor = 'transparent';
+   } else {
+       contenedorText[0].style.backgroundColor = inputColorFondo.value
+        contenedorText[1].style.backgroundColor = inputColorFondo.value
     }
 }
 
