@@ -52,7 +52,7 @@ botonText.addEventListener('click', () => ocultoAsideText())
 //URL-IMAGEN
 
 const inputUrl = document.getElementById('input-img')
-const imgUrl = document.getElementById('meme-img')
+const imgUrl = document.getElementById('meme-container')
 
 
 const changeBackground = (e) => {
@@ -78,15 +78,15 @@ const filtros = () => {
 
 }
 
-brillo.addEventListener('input', (brillo) => filtros(brillo))
-opacidad.addEventListener('input', (opacidad) => filtros(opacidad))
-contraste.addEventListener('input', (contraste) => filtros(contraste))
-desenfoque.addEventListener('input', (desenfoque) => filtros(desenfoque))
-grises.addEventListener('input', (grises) => filtros(grises))
-sepia.addEventListener('input', (sepia) => filtros(sepia))
-hue.addEventListener('input', (hue) => filtros(hue))
-negativo.addEventListener('input', (negativo) => filtros(negativo))
-saturado.addEventListener('input', (saturado) => filtros(saturado))
+brillo.addEventListener('input', () => filtros())
+opacidad.addEventListener('input', () => filtros())
+contraste.addEventListener('input', () => filtros())
+desenfoque.addEventListener('input', () => filtros())
+grises.addEventListener('input', () => filtros())
+sepia.addEventListener('input', () => filtros())
+hue.addEventListener('input', () => filtros())
+negativo.addEventListener('input', () => filtros())
+saturado.addEventListener('input', () => filtros())
 
 
 //INPUT COLOR 
@@ -102,13 +102,13 @@ const cambioDeColor = () => {
 }
 
 const cambioDeColorText = () => {
+    contenedorText[0].style.color = inputColorText.value
     contenedorText[1].style.color = inputColorText.value
-    contenedorText[3].style.color = inputColorText.value
 }
 
 const cambioDeFondo = () => {
+    contenedorText[0].style.backgroundColor = inputColorFondo.value
     contenedorText[1].style.backgroundColor = inputColorFondo.value
-    contenedorText[3].style.backgroundColor = inputColorFondo.value
 }
 
 
@@ -123,12 +123,12 @@ const textoSuperiorInput =  document.getElementById('top-text')
 const textoInferiorInput = document.getElementById('bottom-text')
 
 const cambioDeTextoSuperior = () =>  {
-        contenedorText[1].innerText = `${textoSuperiorInput.value}`
+        contenedorText[0].innerText = `${textoSuperiorInput.value}`
 
 }
 
 const cambioDeTextoInferior = () => {
-    contenedorText[3].innerText = `${textoInferiorInput.value}`
+    contenedorText[1].innerText = `${textoInferiorInput.value}`
 }
 
 
@@ -142,8 +142,8 @@ const select = document.getElementById('fuentes')
 
 
 const cambioDeFuente = () => {
+contenedorText[0].style.fontFamily = `${select.value}`
 contenedorText[1].style.fontFamily = `${select.value}`
-contenedorText[3].style.fontFamily = `${select.value}`
 
 }
 
@@ -157,18 +157,18 @@ const checkedFondo = document.getElementById('fondo-transparente')
 
 const checked = () => {
     if (checkedTop.checked) {
-        contenedorText[1].classList.add('oculto')
+        contenedorText[0].classList.add('oculto')
      } else {
-         contenedorText[1].classList.remove('oculto')
+         contenedorText[0].classList.remove('oculto')
      }
     
 }
 
 const checkBottom = () => {
     if (checkedBottom.checked) {
-       contenedorText[3].classList.add('oculto')
+       contenedorText[1].classList.add('oculto')
     } else {
-        contenedorText[3].classList.remove('oculto')
+        contenedorText[1].classList.remove('oculto')
     }
     
 }
@@ -176,10 +176,10 @@ const checkBottom = () => {
 const checkFondo = () => {
     if (checkedFondo.checked) {
        contenedorText[0].classList.add('oculto');
-       contenedorText[2].classList.add('oculto');
+       contenedorText[1].classList.add('oculto');
     } else {
         contenedorText[0].classList.remove('oculto')
-        contenedorText[2].classList.remove('oculto')
+        contenedorText[1].classList.remove('oculto')
     }
 }
 
@@ -195,18 +195,18 @@ const btnCenter = document.getElementById('btn-center')
 const btnRight = document.getElementById('btn-right')
 
 const posicionI = () => {
-    contenedorText[1].style.textAlign = 'left';
-    contenedorText[3].style.textAlign = 'left'
+    contenedorText[0].style.textAlign = 'left';
+    contenedorText[1].style.textAlign = 'left'
 }
 
 const posicionC = () => {
+    contenedorText[0].style.textAlign = 'center'
     contenedorText[1].style.textAlign = 'center'
-    contenedorText[3].style.textAlign = 'center'
 }
 
 const posicionR = () => {
+    contenedorText[0].style.textAlign = 'right'
     contenedorText[1].style.textAlign = 'right'
-    contenedorText[3].style.textAlign = 'right'
 }
 
 btnLeft.addEventListener('click', () => posicionI())
@@ -233,8 +233,8 @@ downloadButtom.addEventListener("click", () => downloadMeme());
 const tamañoInput = document.getElementById('fuente-fontsize')
 
 const cambioTamañoDeFuente = () => {
+    contenedorText[0].style.fontSize = `${tamañoInput.value}px`
     contenedorText[1].style.fontSize = `${tamañoInput.value}px`
-    contenedorText[3].style.fontSize = `${tamañoInput.value}px`
     
     }
 

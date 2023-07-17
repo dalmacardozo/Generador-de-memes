@@ -38,20 +38,23 @@ body {
     padding: 20px;
 }
 
-.centro-texto {
+.contenedor-meme {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 600px;
-    height: 400px;
+    height: 580px;
     background-color: black;
     background-size: cover;
     background-repeat: 'no-repeat';
     background-position: center;
+    
 }
-
 
 .texto-superior-inferior {
     background-color: white;
     color: black;
-    padding: 10px;
+    padding: 0px;
     margin: 0;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -249,6 +252,10 @@ input[type="color"]::-webkit-color-swatch{
 .oculto {
     display: none;
     
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 

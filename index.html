@@ -43,13 +43,13 @@
             <button id="boton-modo" class="botones"><span class="navegacion">🌆 Modo oscuro</span></button>
         </header>
         <main>
-            <div id="meme-container">
+            <div id="meme-container" class="contenedor-meme">
                 <div class="texto-superior-inferior">
-                    <p class="texto-superior-inferior">TOP TEXT</p>
+                    TOP TEXT
                 </div>
-                <div class="centro-texto" id="meme-img"></div>
+                <div  id="meme-img"></div>
                 <div class="texto-superior-inferior">
-                    <p class="texto-superior-inferior">BOTTOM TEXT</p>
+                    BOTTOM TEXT
                 </div>
             </div>
         </main>
@@ -75,8 +75,7 @@
                                 <p class="subtitulos-columna">FONDO</p>
                             </label>
                             <!--<div class="icono-color">-->
-                            <span class="contenedor-input"><input type="color" value="#FFFFFF"
-                                    id="input-color"><span>#FFFFFF</span></span>
+                            <span class="contenedor-input"><input type="color" value="#FFFFFF" id="input-color" placeholder="#FFFFFF">#FFFFFF</span>
                         </div>
                         <!--</div>-->
                         <!--<div class="contenedor-opciones-color">-->
@@ -98,8 +97,7 @@
                     <label for="contraste" class="sub-filtros">CONTRASTE</label>
                     <input type="range" class="range" min="100" max="1000" value="100" step="1" id="contraste-input">
                     <label for="desenfoque" class="sub-filtros">DESENFOQUE</label>
-                    <input type="range" class="range" min="0px" max="10px" step="0.1px" value="0px"
-                        id="desenfoque-input">
+                    <input type="range" class="range" min="0" max="10" step="0.1" value="0" id="desenfoque-input">
                     <label for="escala-de-grises" class="sub-filtros">ESCALA DE GRISES</label>
                     <input type="range" class="range" min="0" max="100" step="1" value="0" id="grises-input">
                     <label for="sepia" class="sub-filtros">SEPIA</label>
@@ -109,7 +107,7 @@
                     <label for="saturado" class="sub-filtros">SATURADO</label>
                     <input type="range" class="range" min="100" max="1000" step="10" value="100" id="saturado-input">
                     <label for="negativo" class="sub-filtros">NEGATIVO</label>
-                    <input type="range" class="range" min="0" max="1" step="0.1" value="1" id="negativo-input">
+                    <input type="range" class="range" min="0" max="1" step="0.1" value="0" id="negativo-input">
                     <button class="contenedor-input contenedor-restauracion">Reestablecer filtros</button>
                 </form>
             </div>
@@ -150,10 +148,10 @@
                         </option>
                         <option value="Arial, Helvetica, sans-serif">Arial</option>
                         <option value="arial-black">Arial Black</option>
-                        <option value="american">American Type Writer</option>
-                        <option value="andale">Andale Mono</option>
-                        <option value="comic">Comics Sans Ms</option>
-                        <option value="helvetica">Helvetica</option>
+                        <option value="Georgia, 'Times New Roman', Times, serif">Georgia</option>
+                        <option value="'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Lucida Sans</option>
+                        <option value="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Cambria</option>
+                        <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Franklin</option>
                         <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana</option>
                         <option value="'Times New Roman', Times, serif">Times New Roman</option>
                     </select>
