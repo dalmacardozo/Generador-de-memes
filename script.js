@@ -242,15 +242,14 @@ tamañoInput.addEventListener('input', () => cambioTamañoDeFuente())
 
 //SELECT FILTRO
 
-//const selectFiltro = document.getElementById('opciones-color')
-//const contenedorMeme = document.getElementById('contenedor-meme')
+const selectFiltro = document.getElementById('opciones-color')
 
-//const selectorLuminosidad = () => {
-    //contenedorMeme.style.mixBlendMode = `${selectFiltro.value}`
+const selectorLuminosidad = () => {
+    imgUrl.style.backgroundBlendMode = `${selectFiltro.value}`
 
-//}
+}
 
-//selectFiltro.addEventListener('change', () => selectorLuminosidad)
+selectFiltro.addEventListener('change', () => selectorLuminosidad())
 
 //REESTABLECER FILTROS
 
