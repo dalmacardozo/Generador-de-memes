@@ -240,10 +240,21 @@ const cambioTamañoDeFuente = () => {
 
 tamañoInput.addEventListener('input', () => cambioTamañoDeFuente())
 
+//SELECT FILTRO
+
+//const selectFiltro = document.getElementById('opciones-color')
+//const contenedorMeme = document.getElementById('contenedor-meme')
+
+//const selectorLuminosidad = () => {
+    //contenedorMeme.style.mixBlendMode = `${selectFiltro.value}`
+
+//}
+
+//selectFiltro.addEventListener('change', () => selectorLuminosidad)
+
 //REESTABLECER FILTROS
 
 const inputReset = document.getElementById('reset')
-console.log(inputReset)
 
 const reset = () => {
     imgUrl.style.filter = `brightness(1) opacity(1) blur(0px) contrast(100%) grayscale(0%) hue-rotate(0deg) sepia(0%) saturate(100%) invert(0)`
@@ -251,6 +262,33 @@ const reset = () => {
 }
 
 inputReset.addEventListener("click", reset)
+
+//ESPACIADO
+
+const espaciado = document.getElementById('espaciado')
+
+const opcionEspaciado = () => {
+    contenedorText[0].style.padding = `${espaciado.value}px`;
+    contenedorText[1].style.padding = `${espaciado.value}px`;
+
+}
+
+espaciado.addEventListener('input', () => opcionEspaciado())
+
+//INTERLINEADO
+
+const interlineado = document.getElementById('interlineado')
+
+const opcionInterlineado = () => {
+    contenedorText[0].style.lineHeight = `${interlineado.value}`;
+    contenedorText[1].style.lineHeight = `${interlineado.value}`;
+
+}
+
+interlineado.addEventListener('input', () => opcionInterlineado())
+
+
+
 
 
 
