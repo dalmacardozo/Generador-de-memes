@@ -28,7 +28,7 @@ body {
 
 .navegacion {
     padding: 10px;
-    
+
 }
 
 .fondo-header {
@@ -50,9 +50,10 @@ body {
     background-size: cover;
     background-repeat: 'no-repeat';
     background-position: center;
-    
-    
+
 }
+
+
 
 .texto-superior-inferior {
     background-color: white;
@@ -62,7 +63,7 @@ body {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
-    
+
 
 }
 
@@ -102,7 +103,7 @@ body {
     padding: 5px;
     transition-property: background-color;
     transition-duration: 0.5s;
-    
+
 
 }
 
@@ -116,8 +117,8 @@ body {
     width: 220px;
     height: 100vh;
     position: fixed;
-    
-    
+
+
 }
 
 .boton-cerrar {
@@ -153,15 +154,15 @@ body {
     padding: 10px;
     border-style: hidden;
     color: white;
-    
+
 }
 
 
-.contenedor-select{
+.contenedor-select {
     padding: 10px;
     margin-top: 30px;
     margin-left: 5px;
-    
+
 }
 
 .contenedor-restauracion {
@@ -174,35 +175,39 @@ body {
 
 .subtitulos-columna {
     font-size: 12px;
-    
+
 }
 
-.range{
+.range {
     accent-color: #5a5d68;
 }
 
-input[type="color"]{
-appearance: none;
-background-color: transparent;
-width: 20px;
-height: 15px;
-border: none;}
+input[type="color"] {
+    appearance: none;
+    background-color: transparent;
+    width: 20px;
+    height: 15px;
+    border: none;
+}
 
 input[type="color"]::-webkit-color-swatch-wrapper {
-padding: 0;
+    padding: 0;
 
 }
-input[type="color"]::-webkit-color-swatch{
-   border: none; 
-   border-radius: 100%;
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 100%;
 }
 
 /**COLUMNA-TEXTO**/
 
-.fuente, .contenedor-check {
+.fuente,
+.contenedor-check {
     display: flex;
     margin-top: 5px;
 }
+
 .posicion-fuente {
     padding: 7px;
     padding-left: 15px;
@@ -212,7 +217,7 @@ input[type="color"]::-webkit-color-swatch{
 
 .icono-posicion {
     font-size: 18px;
-    
+
 }
 
 .tamaño-fuente {
@@ -247,7 +252,7 @@ input[type="color"]::-webkit-color-swatch{
 }
 
 .modo-claro-aside {
-    background-color:#fafafa ;
+    background-color: #fafafa;
     color: #424242;
 }
 
@@ -258,12 +263,12 @@ input[type="color"]::-webkit-color-swatch{
 .botones-claro {
     background-color: #e0e0e0;
     color: black;
-    
+
 }
 
 .oculto {
     display: none;
-    
+
 }
 
 
@@ -271,43 +276,63 @@ input[type="color"]::-webkit-color-swatch{
 @media (max-width: 930px) {
     .columna {
         width: 100vw;
- } .body {
-    justify-content: center;
- } aside {
-    padding-left: 20px;
-    padding-right: 20px;
- }
     }
 
+    .body {
+        justify-content: center;
+    }
 
-    @media (max-width: 600px) {
-        .fondo-header {
-            padding: 0px;
-        } .contenedor-meme {
-            width: 500px;
-            height: 520px;
-        }
-        }
+    aside {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
-        @media (max-width: 530px) {
-            .fondo-header {
-                padding: 0px;
-            } .contenedor-meme {
-                width: 400px;
-                height: 420px;
-            } .texto-superior-inferior {
-                padding: 0px;
-                font-size: 25px ;
-            }
-            }
 
-            @media (max-width: 420px) {
-                .contenedor-meme {
-                    width: 300px;
-                    height: 320px;
-                } .texto-superior-inferior {
-                    padding: 0px;
-                    font-size: 20px;
-                } 
-            }
-    
+@media (max-width: 600px) {
+    .fondo-header {
+        padding: 0px;
+    }
+
+    .contenedor-meme {
+        width: 500px;
+        height: 520px;
+    }
+}
+
+@media (max-width: 530px) {
+    .fondo-header {
+        padding: 0px;
+    }
+
+    .contenedor-meme {
+        width: 400px;
+        height: 420px;
+    }
+
+    .texto-superior-inferior {
+        padding: 0px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 420px) {
+    .contenedor-meme {
+        width: 350px;
+        height: 370px;
+    }
+
+    .texto-superior-inferior {
+        padding: 0px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .contenedor-restauracion {
+        margin: 0px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+}
+
